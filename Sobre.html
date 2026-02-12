@@ -1,11 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre</title>
 </head>
 <body>
-    
+    <h1>Desafio Formulario</h1><br><br>
+    <Form id="form">
+        <label for="Nome">Nome Completo</label><br> <!-------Label cria uma seção do formulário-->
+                    <input type="text" id="Nome" name="Nome" required><br><br>
+                    <!-------Imputi é a caixa de texto onde insere as informações-->
+
+
+                    <label for="email">E-mail *</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="idade">Idade</label><br>
+                    <input type="number" id="idade" name="idade" min="18" max="99" required><br><br>
+
+                    <label for="Assunto">Assunto</label><br>
+                    <select name="Assunto" id="Assunto" required> <!-----Criar a função de seleção-->
+                        <option value="matematica">Matemática,</option> <!----São as opções de uma seleção-->
+                        <option value="portugues">Português</option>
+                        <option value="biologia">Biolofia</option>
+                        <option value="ciencias">Ciências</option>
+                        <option value="historia">História</option>
+                        <option value="geografia">Geografia</option>
+                        <option value="artes">Artes</option>
+                    </select><br><br>
+
+                    <input type="checkbox" id="manha" name="manha">
+                    <label for="manha">Manhã</label>
+
+                    <input type="checkbox" id="tarde" name="tarde">
+                    <label for="tarde">Tarde</label>
+
+                    <input type="checkbox" id="tarde" name="tarde">
+                    <label for="tarde">Tarde</label><br><br>
+
+
+
+                    <label for="nivel de escolaridade">Nível de escolaridade</label><br>
+                    <select name="nivel de escolaridade" id="nivel de escolaridade"> <!-----Criar a função de seleção-->
+                        <option value="ensino superior completo">Ensino superior completo,</option> <!----São as opções de uma seleção-->
+                        <option value="cursando mestrado">Cursando mestrado</option>
+                        <option value="mestrado completo">Mestrado completo</option>
+                        <option value="cursando doutorado">Cursando doutorado</option>
+                        <option value="doutorado completo">Doutorado completo</option>
+                    </select><br><br>
+
+                    <label for="descrição de si mesmo">Descrição de si mesmo</label><br>
+                    <textarea name="descrição de si mesmo" id="descrição de si mesmo" cols="30" rows="10" minlength="200" required></textarea><br><br>
+                    <!----------Cols colunas, Rows Linhas da caixa de texto-->
+
+                    <input type="submit" value="Enviar Mensagem">
+    </Form>
 </body>
 </html>
