@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antacore</title> <!----titulo na aba de navegação---->
 </head>
+<link rel="stylesheet" href="estilo.css">
 
 <body>
+    <h1 class="menu">Menu principal</h1>
+    <img class="whatsapp" src="https://portais.univasf.edu.br/programadegestao/imagens/icon-whatsapp.png/@@images/image.png" alt="">
     <header>
         <h1>Herschel</h1>
 
@@ -29,7 +32,7 @@
             title="foda">
 
         <article>
-            <p>
+            <p class="burritos"> <!---------Class="" é para criar um grupo onde podemos aplicar a mesma regra no css-->
                 Meus amigos são uns burros
             </p>
         </article>
@@ -48,7 +51,7 @@
     </section>
     <section id="projetos">
 
-        <h2>Projetos</h2>
+        <h2 id="facil">Projetos</h2>
 
         <article>
             <h3>Portifolio</h3>
@@ -63,7 +66,7 @@
     </section>
     <section id="habilidades">
 
-        <h2>Hbilidade e Tecnologias</h2>
+        <h2>Habilidade e Tecnologias</h2>
 
         <table>
 
@@ -98,41 +101,45 @@
     </section>
 
     <footer>
-        <p>Direitos do Ruxus</p>
+        <p class="burritos">
+            Direitos do Ruxus
+        </p>
 
         <section id="contato">
             <h2>Contato</h2>
 
-            <p>chama no zap</p>
+            <p id="facil">
+                chama no zap
+            </p>
 
-            <address>
+            <address class="burritos">
 
                 Email: <a href="mailto:herschel.goes@gmail.com">herschel.goes@gmail.com</a><br>
                 <!-----(BR) Pula uma linha-->
-                telefone: 99 9999-9999
+                <label for="numero">Telefone: 99 9999-9999</label>
 
                 <form action=""> <!------Criar Formulario-->
 
-                    <label for="Nome">Nome</label> <!-------Label cria uma seção do formulário-->
+                    <label for="Nome">Nome</label><br> <!-------Label cria uma seção do formulário-->
                     <input type="text" id="Nome" name="Nome"><br>
                     <!-------Imputi é a caixa de texto onde insere as informações-->
 
 
-                    <label for="email">E-mail *</label>
+                    <label for="email">E-mail *</label><br>
                     <input type="email" id="email" name="email" required><br>
 
-                    <label for="telefone">Telefone</label>
+                    <label for="telefone">Telefone</label><br>
                     <input type="text" id="telefone" name="telefone"><br>
 
-                    <label for="Assunto">Assunto</label>
+                    <label for="Assunto">Assunto</label><br>
                     <select name="Assunto" id="Assunto"> <!-----Criar a função de seleção-->
                         <option value="orcamento">Orçamento</option> <!----São as opções de uma seleção-->
                         <option value="Contato">Contato</option>
                         <option value="Foda">Foda</option>
                     </select><br>
 
-                    <label for="Mensagem">Mensagem</label>
-                    <textarea name="Mensagem" id="Mensagem" cols="30" rows="10"></textarea>
+                    <label for="Mensagem">Mensagem</label><br>
+                    <textarea name="Mensagem" id="Mensagem" cols="30" rows="10"></textarea><br>
                     <!----------Cols colunas, Rows Linhas da caixa de texto-->
 
                     <input type="checkbox" id="inscricao" name="inscricao">
@@ -147,7 +154,22 @@
         </section>
     </footer>
 
+    <p id="facil">teste</p>
 
+    <div class="display-block">Display Block
+        <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <img class="imagem" src="https://static.wikia.nocookie.net/kiseki/images/0/06/Nayuta_Herschel_%28Nayuta%29.png/revision/latest/smart/width/250/height/250?cb=20201226093011" alt="foda">
+        <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <div class="subtitulo">Subtitulo</div>
+        <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+    
+    </div>
+    <span class="display-inline">Display in-line</span><span class="display-inline">Display in-line</span>
+    <div class="display-inline-block">Display In-line Block</div><br><br>
+
+    <div class="relative">
+        <div class="absoluto"></div>
+    </div>
 </body>
 
 </html>
