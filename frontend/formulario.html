@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Validação de Formulário</title>
+    <style>
+        body { font-family: Arial; padding: 30px; background-color: #f0f0f0; }
+        .form-container { background: white; padding: 20px; border-radius: 8px; max-width: 350px; }
+        input { width: 100%; margin: 10px 0; padding: 8px; display: block; box-sizing: border-box; }
+        button { width: 100%; padding: 10px; background: #007bff; color: white; border: none; cursor: pointer; }
+        .msg { font-size: 0.8em; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Cadastro</h2>
+        <p>Preencha tudo direito para o sistema não reclamar de você.</p>
+
+        <input type="text" id="email" placeholder="E-mail">
+        <input type="text" id="telefone" placeholder="Telefone (DD) 99999-9999">
+        <input type="password" id="senha" placeholder="Senha Forte">
+        
+        <p class="msg">A senha precisa de: 8+ caracteres, maiúscula, minúscula, número e símbolo.</p>
+
+        <button onclick="validarFormulario()">Validar Dados</button>
+    </div>
+
+    <script src="formulario.js"></script>
+</body>
+</html>

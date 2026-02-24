@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício de Desconto</title>
+</head>
+<body style="font-family: Arial; padding: 20px;">
+
+    <h1>Calculadora de Desconto</h1>
+    <p>Preencha os campos abaixo se você for capaz de digitar números sem errar.</p>
+
+    <div>
+        <label>Preço do Produto:</label>
+        <input type="number" id="precoOriginal" step="0.01">
+    </div>
+
+    <div style="margin-top: 10px;">
+        <label>Porcentagem de Desconto:</label>
+        <input type="number" id="porcentagemDesconto">
+    </div>
+
+    <button onclick="calcularPrecoFinal()" style="margin-top: 15px;">Calcular</button>
+
+    <h3 id="resultado"></h3>
+
+    <script src="atividadejava.js"></script>
+</body>
+</html>

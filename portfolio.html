@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Herschel</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Herschel</h1>
+            <p class="subtitle">Desenvolvedor Front-End em formação</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="#sobre">Sobre</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Seção Sobre -->
+        <section id="sobre" class="section">
+            <h2>Sobre Mim</h2>
+            <div class="card">
+                <p>Olá! Sou o Herschel, estudante de desenvolvimento web apaixonado por criar soluções práticas e funcionais. Ao longo da minha jornada, mergulhei no universo do HTML, CSS e JavaScript, construindo projetos que vão desde calculadoras até jogos interativos.</p>
+                <p>Aprendi que programar não é apenas escrever código, mas resolver problemas de forma criativa e eficiente. Cada projeto foi uma oportunidade de crescer e entender melhor como a web funciona.</p>
+            </div>
+        </section>
+
+        <!-- Seção Habilidades -->
+        <section id="habilidades" class="section">
+            <h2>O Que Aprendi</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-skill="html">
+                    <h3>🌐 HTML</h3>
+                    <p>Estruturação semântica, formulários com validação, e organização de conteúdo. Aprendi que HTML é a base de tudo na web.</p>
+                </div>
+                <div class="skill-card" data-skill="css">
+                    <h3>🎨 CSS</h3>
+                    <p>Flexbox, Grid Layout, estilização responsiva e animações. Descobri que CSS transforma ideias em interfaces visuais.</p>
+                </div>
+                <div class="skill-card" data-skill="js">
+                    <h3>⚡ JavaScript</h3>
+                    <p>Manipulação do DOM, eventos, validação com Regex, arrays, loops, e POO. JavaScript dá vida às páginas!</p>
+                </div>
+                <div class="skill-card" data-skill="logic">
+                    <h3>🧠 Lógica</h3>
+                    <p>Estruturas condicionais, switch-case, do-while, e validação de dados. A lógica é o coração da programação.</p>
+                </div>
+                <div class="skill-card" data-skill="async">
+                    <h3>🔄 Assíncrono</h3>
+                    <p>Promises, async/await, e manipulação de JSON. Aprendi a lidar com dados que levam tempo para chegar.</p>
+                </div>
+                <div class="skill-card" data-skill="modules">
+                    <h3>📦 Módulos</h3>
+                    <p>Import/export, organização de código em arquivos separados. Código limpo é código feliz!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Projetos -->
+        <section id="projetos" class="section">
+            <h2>Meus Projetos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>🎮 Jogo da Velha</h3>
+                    <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
+                    <p>Um clássico! Aprendi a trabalhar com arrays multidimensionais, verificação de condições de vitória, e manipulação dinâmica do DOM.</p>
+                    <button class="btn" onclick="verDetalhes('jogodavelha')">Ver Detalhes</button>
+                </div>
+
+                <div class="project-card">
+                    <h3>💰 Calculadora de Desconto</h3>
+                    <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
+                    <p>Calculadora prática que ensina validação de entrada, conversão de tipos, e tratamento de erros com isNaN.</p>
+                    <button class="btn" onclick="verDetalhes('calculadora')">Ver Detalhes</button>
+                </div>
+
+                <div class="project-card">
+                    <h3>🚗 Lista de Carros</h3>
+                    <p><strong>Tecnologias:</strong> HTML, JavaScript</p>
+                    <p>Projeto focado em loops do-while e interação com o usuário através de confirm. Aprendi sobre controle de fluxo.</p>
+                    <button class="btn" onclick="verDetalhes('carros')">Ver Detalhes</button>
+                </div>
+
+                <div class="project-card">
+                    <h3>🌍 Seletor de Idiomas</h3>
+                    <p><strong>Tecnologias:</strong> HTML, JavaScript</p>
+                    <p>Switch-case na prática! Aprendi a trabalhar com seleção de opções e retornar diferentes valores baseados na escolha do usuário.</p>
+                    <button class="btn" onclick="verDetalhes('idiomas')">Ver Detalhes</button>
+                </div>
+
+                <div class="project-card">
+                    <h3>🍎 Manipulação de Arrays</h3>
+                    <p><strong>Tecnologias:</strong> JavaScript</p>
+                    <p>Trabalhei com arrays, métodos push(), acesso por índice, e exibição no console. Fundamental para entender estruturas de dados.</p>
+                    <button class="btn" onclick="verDetalhes('frutas')">Ver Detalhes</button>
+                </div>
+
+                <div class="project-card">
+                    <h3>📝 Formulário com Validação</h3>
+                    <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
+                    <p>Validação robusta com Regex! E-mail, telefone e senha forte. Aprendi padrões de validação essenciais para qualquer aplicação.</p>
+                    <button class="btn" onclick="verDetalhes('formulario')">Ver Detalhes</button>
+                </div>
+
+                <div class="project-card">
+                    <h3>🧮 Calculadora Modular</h3>
+                    <p><strong>Tecnologias:</strong> JavaScript (ES6 Modules)</p>
+                    <p>Primeiro contato com módulos! Export/import de funções e organização de código em múltiplos arquivos.</p>
+                    <button class="btn" onclick="verDetalhes('modulos')">Ver Detalhes</button>
+                </div>
+
+                <div class="project-card">
+                    <h3>📦 Sistema de Produtos (POO)</h3>
+                    <p><strong>Tecnologias:</strong> JavaScript</p>
+                    <p>Programação Orientada a Objetos! Classes, herança, construtores e métodos. Aprendi a pensar em objetos do mundo real no código.</p>
+                    <button class="btn" onclick="verDetalhes('produtos')">Ver Detalhes</button>
+                </div>
+
+                <div class="project-card">
+                    <h3>⏳ Carregamento com Promises</h3>
+                    <p><strong>Tecnologias:</strong> JavaScript</p>
+                    <p>Programação assíncrona com Promises, async/await, e manipulação de JSON. Entendi como lidar com operações que levam tempo.</p>
+                    <button class="btn" onclick="verDetalhes('promises')">Ver Detalhes</button>
+                </div>
+
+                <div class="project-card">
+                    <h3>🎨 Layouts com Grid e Flexbox</h3>
+                    <p><strong>Tecnologias:</strong> HTML, CSS</p>
+                    <p>Dominei Grid Layout e Flexbox. Aprendi a criar layouts responsivos e organizados de forma profissional.</p>
+                    <button class="btn" onclick="verDetalhes('layouts')">Ver Detalhes</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato" class="section">
+            <h2>Contato</h2>
+            <div class="card contact-card">
+                <p>Gostou do meu trabalho? Vamos conversar!</p>
+                <div class="contact-info">
+                    <p>📧 <strong>Email:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5d35382f2e3e3538311d38303c3431733e3230">Herschel.goes@gamil.com</a></p>
+                    <p>💼 <strong>LinkedIn:</strong> linkedin.com/in/herschel</p>
+                    <p>🐙 <strong>GitHub:</strong> github.com/herschel</p>
+                </div>
+                <button class="btn btn-primary" onclick="enviarMensagem()">Enviar Mensagem</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Herschel - Desenvolvido com HTML, CSS e JavaScript</p>
+            <p>Sempre aprendendo, sempre evoluindo 🚀</p>
+        </div>
+    </footer>
+
+    <!-- Modal para detalhes dos projetos -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="portfolio.js"></script>
+</body>
+</html>

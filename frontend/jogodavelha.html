@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo da Velha</title>
+    <style>
+        body { font-family: Arial; display: flex; flex-direction: column; align-items: center; }
+        /* O tabuleiro, porque sem grelha isto seria apenas um monte de texto solto */
+        .tabuleiro { display: grid; grid-template-columns: repeat(3, 100px); gap: 5px; margin-top: 20px; }
+        /* As células onde vais clicar e, provavelmente, errar a estratégia */
+        .celula { width: 100px; height: 100px; border: 2px solid #333; display: flex; 
+                  align-items: center; justify-content: center; font-size: 2.5em; cursor: pointer; }
+        .celula:hover { background-color: #eee; }
+    </style>
+</head>
+<body>
+
+    <h1>Jogo da Velha</h1>
+    <p id="status">Vez do jogador: X</p>
+
+    <div class="tabuleiro">
+        <div class="celula" onclick="fazerJogada(0)"></div>
+        <div class="celula" onclick="fazerJogada(1)"></div>
+        <div class="celula" onclick="fazerJogada(2)"></div>
+        <div class="celula" onclick="fazerJogada(3)"></div>
+        <div class="celula" onclick="fazerJogada(4)"></div>
+        <div class="celula" onclick="fazerJogada(5)"></div>
+        <div class="celula" onclick="fazerJogada(6)"></div>
+        <div class="celula" onclick="fazerJogada(7)"></div>
+        <div class="celula" onclick="fazerJogada(8)"></div>
+    </div>
+
+    <button onclick="reiniciarJogo()" style="margin-top: 20px; padding: 10px;">Reiniciar</button>
+
+    <script src="jogodavelha.js"></script>
+</body>
+</html>
